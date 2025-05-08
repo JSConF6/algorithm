@@ -8,7 +8,7 @@
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
         "-g",
-        "${fileDirname}/*.cpp",
+        "${fileDirname}/${fileBasename}",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}"
       ],
@@ -30,6 +30,24 @@
         "kind": "test",
         "isDefault": true
       }
+    },
+    {
+      "type": "shell",
+      "label": "delete",
+      "command": "rm",
+      "args": [
+        "-rf",
+        "${fileDirname}/${fileBasenameNoExtension}",
+        "${fileDirname}/${fileBasenameNoExtension}.dSYM"
+      ]
+    },
+    {
+      "label": "execute_with_delete",
+      "dependsOn": ["C/C++ Build", "execute", "delete"],
+      "dependsOrder": "sequence",
+      "type": "shell",
+      "command": "echo Done",
+      "problemMatcher": []
     }
   ],
   "version": "2.0.0"
