@@ -1,0 +1,19 @@
+{
+  "code-runner.executorMap": {
+    "cpp": "g++ -std=c++17 -o $fileNameWithoutExt $fullFileName && ./$fileNameWithoutExt"
+  },
+  "code-runner.runInTerminal": true,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.parameterHints.enabled": false,
+  "editor.wordBasedSuggestions": false,
+  "editor.inlineSuggest.enabled": false,
+  "files.associations": {
+    "iostream": "cpp",
+    "algorithm": "cpp"
+  }
+}
