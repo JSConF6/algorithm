@@ -20,6 +20,12 @@
     "ostream": "cpp",
     "string": "cpp",
     "list": "cpp",
-    "istream": "cpp"
+    "istream": "cpp",
+    "stack": "cpp",
+    "__split_buffer": "cpp",
+    "deque": "cpp",
+    "queue": "cpp",
+    "regex": "cpp",
+    "vector": "cpp"
   }
 }
