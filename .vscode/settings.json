@@ -26,6 +26,7 @@
     "deque": "cpp",
     "queue": "cpp",
     "regex": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "sstream": "cpp"
   }
 }
